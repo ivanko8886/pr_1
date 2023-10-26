@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация и просмотр ID</title>
+</head>
+<body>
+<h1>Добро пожаловать!</h1>
+<p>Хотите ли вы завести аккаунт?</p>
+<button style="background-color: aquamarine;border-color: #9370DB ; padding: 10px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin:10px" onclick="showRegistrationWidget()">Да</button>
+<button id="but_1" style="background-color: aquamarine;border-color: #9370DB ; padding: 10px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin:10px" onclick="location.href='main_widget.html'">нет</button>
+<p>Или хотите посмотреть свой id?</p>
+<button id="but_2" style="background-color: aquamarine;border-color: #9370DB; padding: 10px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin:10px" onclick="showIdWidget()">Посмотреть id</button>
+
+<script>
+    function showRegistrationWidget() {
+        window.location.href = "registration.html";
+    }
+
+    function showIdWidget() {
+        window.location.href = "look_for_id.html";
+    }
+</script>
+</body>
+</html>
